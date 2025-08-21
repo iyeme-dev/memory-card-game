@@ -65,4 +65,9 @@ function flipCard() {
   checkForMatch();
 }
 
+// Function to check for matching cards
+function checkForMatch() {
+  let isMatch = firstCard.dataset.name === secondCard.dataset.name;
+  isMatch ? disableCards() : unflipCards();
+}
 
