@@ -167,5 +167,79 @@ p {
   background: #4f46e5;
 }
 
+/* Instruction tab at bottom */
+.instruction-tab {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+  /* ✅ one-fifth the original length */
+  background: #4f46e5;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  z-index: 1100;
+  transition: background 0.3s;
+}
+
+.instruction-tab:hover {
+  background: #242247;
+}
+
+/* Hidden instruction box */
+.instruction-content {
+  position: fixed;
+  bottom: 60px;
+  /* sits above the tab */
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  color: #333;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 350px;
+  text-align: center;
+  z-index: 1099;
+  display: none;
+  /* hidden by default */
+}
+
+.instruction-content.show {
+  display: block;
+}
+
+.instruction-content h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #4f46e5;
+}
+
+.instruction-content p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+
 
 
