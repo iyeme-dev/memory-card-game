@@ -44,3 +44,25 @@ function generateCards() {
     cardElement.addEventListener("click", flipCard);
   }
 }
+
+// Function to flip the cards
+function flipCard() {
+  if (lockBoard) return;
+  if (this === firstCard) return;
+  // Start timer only on the very first flip
+  if (!timerStarted) {
+    startTimer();
+    timerStarted = true;
+  }
+  this.classList.add("flipped");
+  if (!firstCard) {
+    firstCard = this;
+    return;
+  }
+  secondCard = this;
+  lockBoard = true;
+
+  checkForMatch();
+}
+
+
