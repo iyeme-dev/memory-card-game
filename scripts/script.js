@@ -95,6 +95,16 @@ function resetBoard() {
   lockBoard = false;
 }
 
+// Function to display gameover
+function gameOver() {
+  clearInterval(timerInterval);
+  timerStarted = false;
+  resetBoard();
+
+  document.querySelector(".game-over-popup").classList.remove("hidden");
+}
+
+
 
 
 
