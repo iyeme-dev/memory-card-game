@@ -149,4 +149,13 @@ document.querySelectorAll(".restart-btn").forEach(btn => {
   btn.addEventListener("click", restart);
 });
 
+// Function to toggle the instruction tab
+function toggleInstructions() {
+  const instructions = document.getElementById("instructions");
+  instructions.classList.toggle("show");
+}
+
+
+
+
 
