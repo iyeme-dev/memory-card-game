@@ -45,6 +45,23 @@ function generateCards() {
   }
 }
 
+// Function to start the timer
+function startTimer() {
+  clearInterval(timerInterval);
+  timeLeft = 60;
+  timerDisplay.textContent = `Time: ${timeLeft}s`;
+
+  timerInterval = setInterval(() => {
+    timeLeft--;
+    timerDisplay.textContent = `Time: ${timeLeft}s`;
+
+    if (timeLeft <= 0) {
+      clearInterval(timerInterval);
+      gameOver();
+    }
+  }, 1000);
+}
+
 // Function to flip the cards
 function flipCard() {
   if (lockBoard) return;
