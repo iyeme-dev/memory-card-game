@@ -188,6 +188,7 @@ p {
   transition: background 0.3s;
 }
 
+
 .instruction-tab:hover {
   background: #242247;
 }
@@ -240,6 +241,47 @@ p {
   cursor: pointer;
 }
 
+/* --- Tablet (all devices up to ~1080px wide) --- */
+@media (max-width: 1080px) {
+  .grid-container {
+    display: grid;
+    /* justify-content: center; */
+    /* align-items: center; */
+    justify-content: space-around;
+
+    grid-template-columns: repeat(6, 1fr);
+    /* 6 per row, auto-resize */
+    grid-gap: 19px;
+    width: 100%;
+    padding: 0 12px;
+    box-sizing: border-box;
+  }
+
+  .card {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    /* keep 2:3 proportion */
+    height: auto;
+  }
+
+  .front-image {
+    width: 55%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .hud {
+    font-size: 24px;
+  }
+
+  .actions button {
+    font-size: 22px;
+    padding: 6px 12px;
+  }
+}
 
 
 
