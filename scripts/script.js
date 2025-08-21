@@ -88,5 +88,13 @@ function disableCards() {
   }, 1000);
 }
 
+// Function to reset first and second card and unlock the board
+function resetBoard() {
+  firstCard = null;
+  secondCard = null;
+  lockBoard = false;
+}
+
+
 
 
