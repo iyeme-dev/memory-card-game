@@ -113,6 +113,21 @@ function youWin() {
   document.querySelector(".win-popup").classList.remove("hidden");
 }
 
+// Function to restart game and shuffle cards
+function restart() {
+  resetBoard();
+  shuffleCards();
+  gridContainer.innerHTML = "";
+  generateCards();
+
+  clearInterval(timerInterval);
+  timeLeft = 60;
+  timerDisplay.textContent = `Time: ${timeLeft}s`;
+  timerStarted = false;
+
+  document.querySelector(".game-over-popup").classList.add("hidden");
+  document.querySelector(".win-popup").classList.add("hidden");
+}
 
 
 
