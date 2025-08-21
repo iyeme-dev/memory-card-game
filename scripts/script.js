@@ -71,3 +71,13 @@ function checkForMatch() {
   isMatch ? disableCards() : unflipCards();
 }
 
+// Function to disable cards after a match
+function disableCards() {
+  firstCard.removeEventListener("click", flipCard);
+  secondCard.removeEventListener("click", flipCard);
+
+
+  resetBoard();
+}
+
+
