@@ -104,6 +104,14 @@ function gameOver() {
   document.querySelector(".game-over-popup").classList.remove("hidden");
 }
 
+// Function to display 'you win' popup when all cards are matched
+function youWin() {
+  clearInterval(timerInterval);
+  timerStarted = false;
+  resetBoard();
+
+  document.querySelector(".win-popup").classList.remove("hidden");
+}
 
 
 
