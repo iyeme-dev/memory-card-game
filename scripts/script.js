@@ -128,6 +128,8 @@ function restart() {
   document.querySelector(".game-over-popup").classList.add("hidden");
   document.querySelector(".win-popup").classList.add("hidden");
 }
-
+document.querySelectorAll(".restart-btn").forEach(btn => {
+  btn.addEventListener("click", restart);
+});
 
 
