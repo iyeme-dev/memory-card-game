@@ -4,7 +4,7 @@ body {
   background: linear-gradient(135deg, #e0e7ff, #f0f4f8);
   color: #1e293b;
   margin: 0px;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 h1 {
@@ -241,6 +241,20 @@ p {
   cursor: pointer;
 }
 
+.confetti {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/confetti.gif") center center / cover no-repeat;
+  /* 🎉 Use a confetti GIF */
+  pointer-events: none;
+  /* so it doesn’t block clicks */
+  z-index: 1001;
+  /* above dimmed background but under popup content */
+}
+
 /* --- Tablet (all devices up to ~1080px wide) --- */
 @media (max-width: 1080px) {
   .grid-container {
@@ -346,7 +360,3 @@ p {
 .instruction-content {
   width: 70%;
 }
-
-
-
-
