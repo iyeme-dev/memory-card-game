@@ -4,8 +4,7 @@ Project by: Iyeme Salubi
 
 [View live github project](https://iyeme-dev.github.io/memory-card-game/)
 
-The Memory Card Game is an interactive web-based game designed to challenge and improve users’ memory and concentration skills. The primary goal of the project is to provide a fun, engaging, and accessible gaming experience for users of all ages, particularly children, while also offering a clean and intuitive interface that is easy to navigate.
-Players are presented with a set of cards placed face down, and the objective is to match pairs by remembering the position of each card. The game includes features such as a countdown timer, restart button, instructional guidance, and feedback popups for both wins and game overs, creating a responsive and rewarding user experience.The project emphasizes simplicity, interactivity, and responsiveness, ensuring it functions smoothly across desktop and mobile devices.
+This project creates an interactive game designed to challenge and improve users’ memory and concentration skills. The primary goal of the project is to provide a fun, engaging, and accessible gaming experience for users of all ages, while also offering a clean and intuitive interface that is easy to navigate.
 
 # Table of Contents
 
@@ -35,93 +34,77 @@ Players are presented with a set of cards placed face down, and the objective is
 10. [Author](author)
 
 # Project Overview
-The Memory Card Game is designed to test and improve users’ memory skills through a simple and engaging card-matching challenge. The game features a clean, responsive design, instructions for first-time players, and easy-to-use controls. Its intuitive interface and interactive elements create a fun and accessible experience on both desktop and mobile devices.
+The game features a clean, responsive design. Players are presented with a set of cards placed face down, and the objective is to match pairs by remembering the position of each card. The game includes features such as a countdown timer, restart button, instructional guidance, and feedback popups for both wins and losses, creating a responsive and rewarding user experience. The project emphasizes simplicity, interactivity, and responsiveness, ensuring it functions smoothly across desktop and mobile devices.
 
 # User Stories
-The game has been designed with a primary focus on - 
-Puzzle & Brain Game Lovers – Users who enjoy challenges that test memory and concentration.
-Teachers & Parents – Those seeking an engaging, simple game for children that can help improve memory while keeping them entertained.
-Students – People who want to practice focus and short-term memory skills.
-Busy Professionals – Users looking for a short, stress-relieving break during work hours.
+The game has been designed with a primary focus on the following set of users - Game Lovers who enjoy challenges that test memory and concentration, Teachers & Parents seeking an engaging, simple game for children that can help improve memory while keeping them entertained, Students who want to practice focus and short-term memory skills and Busy Professionals  looking for a short, stress-relieving break during work hours. The user stories include:
 
-Quick and Easy to Start
+Quick and Easy to Start:
 As a Busy Professional, I want to quickly start a game without needing to sign up, so I can maximize my break time.
 
-Mobile Responsiveness 
+Mobile Responsiveness: 
 As a game lover, I want the game to function properly on my phone, so I can play on the go.
 
-Restart Button
-As a game lover, I want to quickly restart the game with a single click, so that I can replay immediately if I make a mistake or want a fresh challenge.
+Restart Button:
+As a game lover, I want to quickly restart the game with a single click, so that I can replay immediately if I make a mistake or want a new challenge without having to refresh the whole page.
 
-Instruction Tab
+Instruction Tab:
 As a game lover, I want to easily access clear instructions on how to play, so that I can understand the objectives, controls, and rules before starting the game.
 
-You Win Popup
-As a game lover, I want to receive feedback when I successfully match all cards, so that I feel encouraged for completing the challenge and motivated to play again.
+You Win Popup:
+As a game lover, I want to receive feedback when I successfully match all cards, so that I feel encouraged after completing the challenge and motivated to play again.
 
-Simple and Fun
+Simple and Fun:
 As a teacher, I want a simple and fun game for children, so they stay engaged.
 
-Uncluttered Layout
+Uncluttered Layout:
 As a game lover, I want the game interface to be clean and minimal, showing only essential elements— so that I can focus on the game without distractions or confusion.
 
 # Rationale
-The Memory Card Game is a simple, browser-based matching game that challenges players to flip and match pairs of cards within a 60-second time limit. With just a tap, users can start the game, flip cards, and attempt to find all matching pairs before time runs out. Clean and uncluttered, the game’s straightforward interface ensures both children and adults can enjoy a playful brain exercise without distractions. Whether you're looking to test your memory or just pass a moment, this game delivers quick, accessible fun—no downloads, no setup, just intuitive gameplay.
+The Memory Card Game is a simple matching game that challenges players to flip and match pairs of cards within a 60-second time limit. With just a tap, users can start the game, flip cards, and attempt to find all matching pairs before time runs out. Clean and uncluttered, the game’s simple interface ensures both children and adults can enjoy a playful brain exercise without distractions. 
 
 ### Target Audience
 Puzzle & Brain Game Lovers – Users who enjoy challenges that test memory and concentration.
-Teachers & Parents – Those seeking an engaging, simple game for children that can help improve memory while keeping them entertained.
+Teachers & Parents – Those seeking an engaging, simple game for children that can help improve their memory while keeping them entertained.
 Students – People who want to practice focus and short-term memory skills.
 Busy Professionals – Users looking for a short, stress-relieving break during work hours.
 
 ### Motivation
-The Memory Card Game was created to solve common problems that many game lovers experience, from the user stories above we can identify the following pain points;
+The Memory Card Game was created to solve common problems that many game lovers experience. From the user stories above, we can identify the following pain points;
 -Some games take too much time with registration and sign-up processes
--Some games are not responsive on mobile phones which could be frustrating for users that are out and about.
+-Some games are not responsive on mobile phones which could be frustrating for users when they are out and about.
 -Players might feel frustrated if they have to manually reload the page to start a new game. 
 -Without accessible instructions, users can feel confused, hesitant, or potentially abandon the game before giving it a fair try
 -Without positive, immediate feedback, players may not be motivated to carry on with the game
--If the game is too complex, children may lose interest
+-If the game is too complex, children may loose interest
 -Cluttered game layout, which could be distracting or confusing
 
 This game was therefore designed to provide a fun, simple, and engaging way to improve memory and concentration while having fun. It offers clear instructions, restart functionality, and instant feedback on wins or losses. The goal is to deliver a clean, interactive, and accessible game experience for both children and adults.
 
 ### Background
-Memory card games have long been used as a tool for improving cognitive skills, such as concentration, attention, and memory retention. With the rise of digital platforms, these traditional games have transitioned into interactive web applications, offering greater accessibility and engagement. This project brings the classic memory-matching concept online, combining educational benefits with entertaining gameplay while leveraging modern web technologies to create a responsive and user-friendly experience.
+Memory card games have long been used as a tool for improving cognitive skills, such as concentration, attention, and memory retention. With the rise of digital platforms, these traditional games have transitioned into interactive web applications, offering greater accessibility and engagement. However, there have been issues with responsiveness and ease of use.  This project seeks to solve this issue by creating a responsive and user-friendly experience.
 
 ### Proposed Solution
-
 The memory card game provides a simple, intuitive, and engaging interface that addresses the common pain points of traditional online memory games. 
 
-#### Key Features and Functionalities
+##### Key Features and Functionalities
 
-Clear Instructions Tab: Users can quickly understand how to play without confusion.
+- Clear Instructions Tab: Users can quickly understand how to play without confusion.
+- Restart Button: Allows users to reset the game instantly, without having to reload the whole page.
+- Countdown Timer: Adds a challenge element and motivates users to improve their speed.
+- Win and Game-Over Popups: Provides immediate feedback when a game is completed or lost, enhancing user satisfaction.
+- Simple and Uncluttered Layout: The interface is visually clean and responsive, making it accessible on both desktops and    mobile devices.
+- Fun and Engaging Design: The game is designed for all ages, with a focus on interactivity and fun.
+- By combining user-centered design with responsive functionality, this project offers a more intuitive and rewarding  memory game experience compared to typical online alternatives.
 
-Restart Button: Allows users to reset the game instantly, supporting repeated play and experimentation.
-
-Countdown Timer: Adds a challenge element and motivates users to improve their speed.
-
-Win and Game-Over Popups: Provides immediate feedback when a game is completed or lost, enhancing user satisfaction.
-
-Simple and Uncluttered Layout: The interface is visually clean and responsive, making it accessible on both desktops and mobile devices.
-
-Fun and Engaging Design: The game is designed for all ages, especially children, with a focus on interactivity and enjoyment.
-
-By combining user-centered design with responsive functionality, this project offers a more intuitive and rewarding memory game experience compared to typical online alternatives.
-
-### Potential Benefits
+#### Potential Benefits
 
 The memory card game offers several advantages over typical online memory games:
-
-Enhanced User Experience: With a clean, uncluttered layout and clear instructions, users can quickly engage without confusion.
-
-Immediate Feedback: Win and game-over popups provide real-time feedback, increasing user satisfaction and motivation.
-
-Accessibility Across Devices: Fully responsive design ensures a seamless experience on both desktops and mobile devices, including small screens.
-
-Replayability: The restart button and dynamic card shuffling encourage repeated gameplay, promoting skill improvement and engagement.
-
-Interactive and Fun Design: The game is visually appealing and engaging, making it suitable for both children and adults.
+- Enhanced User Experience: With a clean, uncluttered layout and clear instructions, users can quickly engage without confusion.
+- Immediate Feedback: Win and game-over popups provide real-time feedback, increasing user satisfaction and motivation.
+- Responsive Design: Fully responsive design ensures a seamless experience on both desktops and mobile devices, including small screens.
+- Replayability: The restart button and dynamic card shuffling encourage repeated gameplay, promoting skill improvement and engagement.
+- Interactive and Fun Design: The game is visually appealing and engaging, making it suitable for both children and adults.
 
 Efficiency and Simplicity: Users can play without unnecessary distractions, unlike other memory games that may have overly complex or cluttered interfaces.
 
@@ -204,3 +187,4 @@ Overall, the Memory Card Game demonstrates how simple, thoughtfully designed dig
 The Memory Card Game features a clean, minimalistic design that emphasizes clarity and ease of use. Cards are displayed in a grid layout with evenly spaced rows and columns, ensuring a balanced visual hierarchy. The color palette uses a dark background with bright, contrasting cards to make gameplay elements stand out.
 
 Animations, such as card flips and win/game-over popups, provide immediate feedback, enhancing engagement and user satisfaction. The interface is responsive, adjusting seamlessly across desktops, tablets, and mobile devices, while maintaining proportional spacing and readability. Overall, the design prioritizes simplicity, accessibility, and visual appeal, making it intuitive for users of all ages.
+
