@@ -173,6 +173,11 @@ Potential benefits include improved user satisfaction, increased educational val
 # Design Overview
 The Memory Game features a single-page site with a clean, minimalistic design. Cards are displayed in a grid layout with evenly spaced rows and columns, ensuring a balanced visual hierarchy. The color palette uses a light background with darker contrasting cards to make gameplay elements stand out.
 
-Animations, such as card flips and win/game-over popups, provide immediate feedback, enhancing engagement and user satisfaction. The interface is responsive, adjusting seamlessly across desktops, tablets, and mobile devices, while maintaining proportional spacing and readability. Overall, the design prioritizes simplicity, accessibility, and visual appeal, making it intuitive for users of all ages.
+### Brand Colours
 
+the brand colors are selected to present a clean, modern, and playful. Patterned Teal & Aqua (SVG pattern background)
+
+Purpose: Back of cards.
+
+Personality: Playful, vibrant, adds variety and uniqueness to the otherwise flat surfaces.
 
