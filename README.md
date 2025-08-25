@@ -147,20 +147,20 @@ No user accounts or progress tracking: There is no system to save scores or trac
 
 Fixed card set: The game uses a predefined set of images with no option for customization
 
-### Future Improvements
+#### Future Improvements
 
 To increase engagement, usability, and educational value, the following improvements and extensions should be planned for future versions of the Memory Card Game:
 
-#### Multiple Difficulty Levels
+##### Multiple Difficulty Levels
 Introduce easy, medium, and hard modes with varying numbers of cards or time limits to challenge players of all skill levels.
 
-#### Customizable Card Sets
+##### Customizable Card Sets
 Allow users to upload or select custom images, themes, or categories, making the game more personal and engaging.
 
-#### Score Tracking and Leaderboards
+##### Score Tracking and Leaderboards
 Implement user accounts or local storage to track high scores and fastest completion times, keeping players engaged.
 
-#### Multiplayer Functionality
+##### Multiplayer Functionality
 Add multiplayer modes so players can compete or collaborate with friends and family.
 
 ### Summary
@@ -170,14 +170,59 @@ The project addresses common pain points in memory games, such as unclear instru
 
 Potential benefits include improved user satisfaction, increased educational value, and improved engagement through features like timed challenges, intuitive controls, and visual feedback. Future enhancements—such as multiple difficulty levels, multiplayer modes, score tracking, and educational content will expand the game’s appeal and impact.
 
-# Design Overview
-The Memory Game features a single-page site with a clean, minimalistic design. Cards are displayed in a grid layout with evenly spaced rows and columns, ensuring a balanced visual hierarchy. The color palette uses a light background with darker contrasting cards to make gameplay elements stand out.
+# Design 
+The website features an interactive memory card game designed with a clean and modern interface. It is built using HTML5, CSS3, and JavaScript, ensuring smooth gameplay, responsiveness, and an engaging user experience across different screen sizes. The layout is simple, user-friendly, and optimized for both desktop and mobile devices, making the game accessible and enjoyable anywhere.
 
 ### Brand Colours
 
-the brand colors are selected to present a clean, modern, and playful. Patterned Teal & Aqua (SVG pattern background)
+Vibrant and playful tones that reflect the fun, energetic nature of the game. The bold contrast creates excitement, keeps players engaged, and enhances the overall interactive experience.
 
-Purpose: Back of cards.
+### Typography
 
-Personality: Playful, vibrant, adds variety and uniqueness to the otherwise flat surfaces.
+Bold and clear fonts that ensure readability while matching the playful, energetic theme of the game, keeping the interface engaging without distracting players.
 
+### Layout and Structure
+
+1. Header
+- Features a bold descriptive message, “Memory Card Game,” making it immediately clear to the player what the site is about.
+
+2. Game Area
+- Includes the grid container where the cards appear. Cards are laid face down and flipped on click. The user initiates the game by clicking on a card, thereby improving the user experience. If two flipped cards match, they remain visible; otherwise, they flip back.
+- The goal is to match all cards within 60 seconds.
+
+3. Countdown Timer:
+- Adds a challenge element and motivates users to improve their speed.
+
+4. Restart Button:
+- Allows users to reset the game instantly, without having to reload the whole page.
+
+5. Clear Instructions Tab:
+- The instruction tab provides players with clear guidance on how to play the memory card game, explaining the rules, objectives (match all card pairs), and any conditions (like the timer).
+
+Its purpose is to make the game easy to understand, especially for first-time players, so they can quickly start playing without confusion.
+
+A bold page title: “Memory Card Game”
+
+A timer display (e.g., Time: 60s)
+
+A Restart button
+
+Instruction overlay section explaining how to play
+
+The grid container where the cards appear
+
+2. Game Logic & Flow
+
+The game begins when the first card is clicked, triggering the countdown.
+
+Cards are laid face-down and flipped on tap/click.
+
+If two flipped cards match, they remain visible; otherwise, they flip back.
+
+Goal: Match all cards within 60 seconds.
+
+3. Win/Lose Modals (Popups)
+
+When time runs out: a “Game Over!” popup appears with a "Restart" button.
+
+If all pairs are matched in time: a “You Win!” popup with a "Play Again" button appears.
