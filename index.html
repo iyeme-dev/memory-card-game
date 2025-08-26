@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Meta tags for search engines -->
-    <meta name="description"
-        content="Boost your brainpower with our fun and challenging memory games! Play online for free and improve your focus, concentration, and cognitive skills.">
-    <meta name="keywords"
-        content="memory game, memory games online, brain games, free memory games, concentration games, cognitive games, matching games, memory training">
-     <!--Title-->
-    <title>Memory Card Game</title>
-     <!--Google font-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <!--CSS Stylesheet-->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.png">
-</head>
-<body>
-    <h1>Memory Card Game</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Meta tags for search engines -->
+        <meta name="description" content="Boost your brainpower with our fun and challenging memory games! Play online for free and improve your focus, concentration, and cognitive skills.">
+        <meta name="keywords" content="memory game, memory games online, brain games, free memory games, concentration games, cognitive games, matching games, memory training">
+        <!--Title-->
+        <title>Memory Card Game</title>
+        <!--Google font-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <!--CSS Stylesheet-->
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.png">
+    </head>
+    <body>
+        <h1>Memory Card Game</h1>
         <div class="grid-container"></div>
-         <!-- Game Over Popup -->
+        <!-- Game Over Popup -->
         <div class="game-over-popup hidden">
             <div class="popup-content">
                 <h2> Game Over!</h2>
@@ -30,38 +28,33 @@
         </div>
         <!-- You Win Popup -->
         <div class="win-popup hidden">
-            <div class="confetti"></div> <!-- Confetti layer -->
+            <div class="confetti"></div>
+            <!-- Confetti layer -->
             <div class="popup-content">
                 <h2> You Win!</h2>
                 <button class="restart-btn">Play Again</button>
             </div>
         </div>
-
         <div class="hud">
             <div class="timer">Time: 60s</div>
         </div>
         <div class="actions">
             <button onclick="restart()">Restart</button>
         </div>
-
-    <!--Javascript-->
-    <script src="scripts/script.js"></script>
-</body>
-
- <!-- Instruction Tab -->
-<div class="instruction-tab" onclick="toggleInstructions()">
-   Instructions
-</div>
-
-
-<div class="instruction-content" id="instructions">
-  <button class="close-btn" onclick="toggleInstructions()">×</button>
-  <h3>How to Play</h3>
-  <p>Match all the pairs by flipping the cards.</p>
-  <p>Tap a card to flip it. Find its matching pair to keep them open.</p>
-  <p>Match all cards within 60 seconds to win the game!</p>
-  <p>Click a card to start the game</p>
-  <p>Goodluck!</p>
-</div>
-
+        <!-- Instruction Tab -->
+        <div class="instruction-tab" onclick="toggleInstructions()">
+            Instructions
+        </div>
+        <div class="instruction-content" id="instructions">
+            <button class="close-btn" onclick="toggleInstructions()">×</button>
+            <h3>How to Play</h3>
+            <p>Match all the pairs by flipping the cards.</p>
+            <p>Tap a card to flip it. Find its matching pair to keep them open.</p>
+            <p>Match all cards within 60 seconds to win the game!</p>
+            <p>Click a card to start the game</p>
+            <p>Goodluck!</p>
+        </div>
+        <!--Javascript-->
+        <script src="scripts/script.js"></script>
+    </body>
 </html>
