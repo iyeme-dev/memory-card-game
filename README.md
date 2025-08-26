@@ -297,6 +297,8 @@ Below is a list of test cases used to validate the functionality of the Memory C
 **Summary:**  
 All critical **gameplay, win/lose conditions, and restart functionality** passed testing successfully. The game behaves consistently across different scenarios.
 
+---
+
 ### Code Validation
 
 #### HTML Validation
@@ -304,10 +306,13 @@ All critical **gameplay, win/lose conditions, and restart functionality** passed
 
 No errors on the HTML validation tool
 
+---
+
 #### CSS Validation
 ![CSS Validation](assets/images/css-validator.png)
 
 No errors on the CSS validation tool
+
 
 
 
