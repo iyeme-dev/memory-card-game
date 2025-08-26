@@ -199,30 +199,88 @@ Bold and clear fonts that ensure readability while matching the playful, energet
 5. Clear Instructions Tab:
 - The instruction tab provides players with clear guidance on how to play the memory card game, explaining the rules, objectives (match all card pairs), and any conditions (like the timer).
 
-Its purpose is to make the game easy to understand, especially for first-time players, so they can quickly start playing without confusion.
+6. 'You Win' Popup
+- If all pairs are matched in time: a “You Win!” popup with a "Play Again" button appears.
 
-A bold page title: “Memory Card Game”
+7. 'Game Over' Popup
+- When time runs out: a “Game Over!” popup appears with a "Restart" button.
 
-A timer display (e.g., Time: 60s)
+# BrowserStack Responsiveness Test Report 
+Test Type: **Responsive UI**  
+Test Tool: **BrowserStack Live**  
 
-A Restart button
+---
 
-Instruction overlay section explaining how to play
+## Device Responsiveness Test
 
-The grid container where the cards appear
+<details>
+<summary>Click to expand Device Tests</summary>
 
-2. Game Logic & Flow
+| Test ID | Device | OS / Version | Screen Resolution | Test Scenario | Expected Result | Actual Result | Status |
+|---------|--------|--------------|-----------------|---------------|-----------------|---------------|--------|
+| DEV-01 | iPhone 14 Pro | iOS 16.5 | 430 × 932 | Check card grid alignment and tap response | Grid adapts to 3 cards/row, cards/timer/buttons scale, touch works | Works as expected | ✅ Pass |
+| DEV-02 | Samsung Galaxy S23 | Android 13 | 412 × 915 | Check timer, buttons, and popup responsiveness | Elements centered, buttons clickable, text scales properly | Works as expected | ✅ Pass |
+| DEV-03 | iPad Pro 11" | iPadOS 16.4 | 834 × 1194 | Check tablet layout, scaling, and responsiveness | Cards larger, grid centered, UI adapts with 3 cards per row | Works as expected | ✅ Pass |
+| DEV-04 | MacBook Pro 14" | macOS Ventura 13.3 | 1512 × 982 | Test desktop layout | 6 cards/row, text/buttons at desktop scale, responsive window resizing | Works as expected | ✅ Pass |
+| DEV-05 | Windows 11 Laptop | Windows 11 (22H2) | 1366 × 768 | Test lower desktop resolution | Cards fit 6 per row, centered, no overlap, popup scales | Works as expected | ✅ Pass |
 
-The game begins when the first card is clicked, triggering the countdown.
+</details>
 
-Cards are laid face-down and flipped on tap/click.
+---
 
-If two flipped cards match, they remain visible; otherwise, they flip back.
+## Browser Responsiveness Test
 
-Goal: Match all cards within 60 seconds.
+<details>
+<summary>Click to expand Browser Tests</summary>
 
-3. Win/Lose Modals (Popups)
+| Test ID | Browser | Version | OS / Device | Test Scenario | Expected Result | Actual Result | Status |
+|---------|---------|---------|-------------|---------------|-----------------|---------------|--------|
+| BRW-01 | Safari | 16.5 | iPhone 14 Pro | Mobile layout in Safari | Layout adapts with 3 cards/row, smooth touch | Works as expected | ✅ Pass |
+| BRW-02 | Chrome | 114 | Samsung Galaxy S23 | Mobile layout in Chrome | Layout consistent with Safari, responsive buttons | Works as expected | ✅ Pass |
+| BRW-03 | Safari | 16.4 | iPad Pro 11" | Tablet layout in Safari | Layout adapts with 3 cards/row, centered | Works as expected | ✅ Pass |
+| BRW-04 | Chrome | 114 | MacBook Pro 14" | Desktop layout in Chrome | 6 cards/row, responsive grid | Works as expected | ✅ Pass |
+| BRW-05 | Edge | 113 | Windows 11 Laptop | Desktop layout in Edge | Layout same as Chrome, popups scale correctly | Works as expected | ✅ Pass |
+| BRW-06 | Firefox | 113 | Samsung Galaxy S23 | Mobile layout in Firefox | Layout consistent with Chrome/Safari | Works as expected | ✅ Pass |
+| BRW-07 | Chrome | 114 | iPad Pro 11" | Tablet layout in Chrome | Layout same as Safari, buttons/timer scale well | Works as expected | ✅ Pass |
+| BRW-08 | Firefox | 113 | Windows 11 Laptop | Desktop layout in Firefox | Layout same as Edge/Chrome, no misalignment | Works as expected | ✅ Pass |
+| BRW-09 | Safari | 16.5 | MacBook Pro 14" | Desktop layout in Safari | Layout consistent with Chrome, smooth scaling | Works as expected | ✅ Pass |
 
-When time runs out: a “Game Over!” popup appears with a "Restart" button.
+</details>
 
-If all pairs are matched in time: a “You Win!” popup with a "Play Again" button appears.
+---
+
+## Responsive Test Summary
+- **Devices**: Works responsively across iOS, Android, tablets, and desktops.  
+  - **3 cards/row** on mobile/tablet  
+  - **6 cards/row** on desktop
+- **Browsers**: Consistent behavior on Safari, Chrome, Edge, Firefox across mobile and desktop.  
+- **Popups & Timer**: Function correctly in all tested environments.  
+
+---
+
+# Test Cases
+
+Below is a list of test cases used to validate the functionality of the Memory Card Game.
+
+---
+
+## Test Case Table
+
+| Scenario ID | Scenario Description       | Test Case ID | Test Case Description        | Precondition                     | Test Steps                  | Expected Result                                       | Actual Result                                        | Status   |
+|-------------|----------------------------|--------------|------------------------------|----------------------------------|-----------------------------|-------------------------------------------------------|------------------------------------------------------|----------|
+| SC01        | Card flipping functionality | TC01         | Flip first card              | Game loaded, cards face down     | Click on one card           | Card flips, timer starts, `firstCard` is set          | First card flipped, timer started                    | ✅ Pass  |
+| SC01        | Card flipping functionality | TC02         | Prevent same card double click | One card already flipped         | Click the same card again   | No change occurs, no error                            | No flip, board unchanged                             | ✅ Pass  |
+| SC01        | Card flipping functionality | TC03         | Flip two different cards     | Game loaded                      | Click two different cards   | Both cards flip, `checkForMatch()` runs               | Both cards flipped, match check executed             | ✅ Pass  |
+| SC02        | Matching logic             | TC04         | Matching pair check          | Two matching cards available     | Flip two matching cards     | Cards stay flipped, clicks disabled, `disableCards()` runs | Cards stayed flipped, unclickable                    | ✅ Pass  |
+| SC02        | Matching logic             | TC05         | Non-matching pair check      | Two non-matching cards available | Flip two different cards    | Cards flip back after delay, board unlocked           | Cards flipped back after 1s, board unlocked          | ✅ Pass  |
+| SC03        | Matched cards behavior     | TC06         | Disable matched cards        | Two cards flipped and matched    | Observe board state         | Matched cards stay visible and unclickable            | Matched cards stayed flipped and disabled            | ✅ Pass  |
+| SC04        | Win condition              | TC07         | All pairs matched            | Last pair flipped correctly      | Flip last matching pair     | "You Win" popup appears, timer stops                  | "You Win" popup displayed, timer stopped             | ✅ Pass  |
+| SC05        | Timer countdown            | TC08         | Timer starts on first flip   | Game loaded                      | Click the first card        | Timer starts countdown                               | Timer started countdown after first card flip        | ✅ Pass  |
+| SC05        | Timer countdown            | TC09         | Timer reaches zero           | Timer running                    | Wait until timer reaches 0  | "Game Over" popup appears, timer stops                | Timer hit 0, "Game Over" popup displayed             | ✅ Pass  |
+| SC06        | Restart functionality      | TC10         | Restart game                 | Game over or win state           | Click Restart button        | Board resets, timer resets, new shuffled cards        | Board reset, cards reshuffled, timer reset to 60s    | ✅ Pass  |
+
+---
+
+**Summary:**  
+All critical **gameplay, win/lose conditions, and restart functionality** passed testing successfully. The game behaves consistently across different scenarios.
+
