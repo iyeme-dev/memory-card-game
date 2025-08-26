@@ -174,35 +174,58 @@ Potential benefits include improved user satisfaction, increased educational val
 The website features an interactive memory card game designed with a clean and modern interface. It is built using HTML5, CSS3, and JavaScript, ensuring smooth gameplay, responsiveness, and an engaging user experience across different screen sizes. The layout is simple, user-friendly, and optimized for both desktop and mobile devices, making the game accessible and enjoyable anywhere.
 
 ### Brand Colours
+![Brand colors](assets/images/color-collage.jpg)
 
-Vibrant and playful tones that reflect the fun, energetic nature of the game. The bold contrast creates excitement, keeps players engaged, and enhances the overall interactive experience.
+- Vibrant and playful tones that reflect the fun, energetic nature of the game. The bold contrast creates excitement, keeps players engaged, and enhances the overall interactive experience.
 
 ### Typography
+![Typography](assets/images/typography.png)
 
 Bold and clear fonts that ensure readability while matching the playful, energetic theme of the game, keeping the interface engaging without distracting players.
 
 ### Layout and Structure
 
 1. Header
+
+![Header](assets/images/header.png)
+
 - Features a bold descriptive message, “Memory Card Game,” making it immediately clear to the player what the site is about.
 
 2. Game Area
+
+![Game Area](assets/images/game-area.png)
+
 - Includes the grid container where the cards appear. Cards are laid face down and flipped on click. The user initiates the game by clicking on a card, thereby improving the user experience. If two flipped cards match, they remain visible; otherwise, they flip back.
 - The goal is to match all cards within 60 seconds.
 
 3. Countdown Timer:
+
+![Countdown Timer](assets/images/timer.png)
+
 - Adds a challenge element and motivates users to improve their speed.
 
 4. Restart Button:
+
+![Restart Button](assets/images/restart.png)
+
 - Allows users to reset the game instantly, without having to reload the whole page.
 
 5. Clear Instructions Tab:
+
+![Instruction tab](assets/images/instructions.png)
+
 - The instruction tab provides players with clear guidance on how to play the memory card game, explaining the rules, objectives (match all card pairs), and any conditions (like the timer).
 
 6. 'You Win' Popup
+
+![You Win Popup](assets/images/you-win.png)
+
 - If all pairs are matched in time: a “You Win!” popup with a "Play Again" button appears.
 
-7. 'Game Over' Popup
+8. 'Game Over' Popup
+
+![Game Over Popup](assets/images/game-over.png)
+
 - When time runs out: a “Game Over!” popup appears with a "Restart" button.
 
 # BrowserStack Responsiveness Test Report 
@@ -273,5 +296,6 @@ Below is a list of test cases used to validate the functionality of the Memory C
 
 **Summary:**  
 All critical **gameplay, win/lose conditions, and restart functionality** passed testing successfully. The game behaves consistently across different scenarios.
+
 
 
