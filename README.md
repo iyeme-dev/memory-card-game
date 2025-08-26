@@ -213,9 +213,6 @@ Test Tool: **BrowserStack Live**
 
 ## Device Responsiveness Test
 
-<details>
-<summary>Click to expand Device Tests</summary>
-
 | Test ID | Device | OS / Version | Screen Resolution | Test Scenario | Expected Result | Actual Result | Status |
 |---------|--------|--------------|-----------------|---------------|-----------------|---------------|--------|
 | DEV-01 | iPhone 14 Pro | iOS 16.5 | 430 × 932 | Check card grid alignment and tap response | Grid adapts to 3 cards/row, cards/timer/buttons scale, touch works | Works as expected | ✅ Pass |
@@ -224,14 +221,9 @@ Test Tool: **BrowserStack Live**
 | DEV-04 | MacBook Pro 14" | macOS Ventura 13.3 | 1512 × 982 | Test desktop layout | 6 cards/row, text/buttons at desktop scale, responsive window resizing | Works as expected | ✅ Pass |
 | DEV-05 | Windows 11 Laptop | Windows 11 (22H2) | 1366 × 768 | Test lower desktop resolution | Cards fit 6 per row, centered, no overlap, popup scales | Works as expected | ✅ Pass |
 
-</details>
-
 ---
 
 ## Browser Responsiveness Test
-
-<details>
-<summary>Click to expand Browser Tests</summary>
 
 | Test ID | Browser | Version | OS / Device | Test Scenario | Expected Result | Actual Result | Status |
 |---------|---------|---------|-------------|---------------|-----------------|---------------|--------|
@@ -244,8 +236,6 @@ Test Tool: **BrowserStack Live**
 | BRW-07 | Chrome | 114 | iPad Pro 11" | Tablet layout in Chrome | Layout same as Safari, buttons/timer scale well | Works as expected | ✅ Pass |
 | BRW-08 | Firefox | 113 | Windows 11 Laptop | Desktop layout in Firefox | Layout same as Edge/Chrome, no misalignment | Works as expected | ✅ Pass |
 | BRW-09 | Safari | 16.5 | MacBook Pro 14" | Desktop layout in Safari | Layout consistent with Chrome, smooth scaling | Works as expected | ✅ Pass |
-
-</details>
 
 ---
 
@@ -283,4 +273,5 @@ Below is a list of test cases used to validate the functionality of the Memory C
 
 **Summary:**  
 All critical **gameplay, win/lose conditions, and restart functionality** passed testing successfully. The game behaves consistently across different scenarios.
+
 
