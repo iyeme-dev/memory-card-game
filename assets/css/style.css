@@ -188,7 +188,6 @@ p {
   transition: background 0.3s;
 }
 
-
 .instruction-tab:hover {
   background: #242247;
 }
@@ -253,6 +252,62 @@ p {
   /* so it doesn’t block clicks */
   z-index: 1001;
   /* above dimmed background but under popup content */
+}
+
+/* 404 error page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.frem {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+}
+
+.frem .gif {
+  max-width: 320px;   /* desktop/tablet default size */
+  width: 100%;        /* responsive scaling */
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.frem p {
+  font-size: 7rem;
+  color: #00000063;
+  margin-bottom: 1rem;
+}
+
+.frem h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.frem h5 {
+  color: #9c9c9c;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.frem a {
+  background: #4f46e5;
+  padding: 12px 24px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 13px;
+  transition: background 0.3s ease;
+}
+
+.frem a:hover {
+  background: #3730a3;
 }
 
 /* --- Tablet (all devices up to ~1080px wide) --- */
