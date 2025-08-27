@@ -22,7 +22,7 @@ This project creates an interactive game designed to challenge and improve users
 4. [Design](#design)
    - [Brand Colours](#brand-colours)  
    - [Layout & Structure](#layout-and-structure)  
-   - [Wireframes](#wireframes)  
+   - [Wireframe](#wireframe)  
 5. [Deployment](#deployment)
 6. [Testing](#testing)
    - [Browser Testing](#browser-testing)  
@@ -247,9 +247,6 @@ The commands used to add changes, commit, and push them are as follows:
    - git commit -m "Description of input or changes made"  (description of the edits made)
    - git push  (push the changes to github)
 
-### Deployment on Github
-
-
 ### Hosting
 1. To host my website on Github, I selected the repository - home-staging
 2. From Settings, I clicked on Pages and followed the steps below:
@@ -343,6 +340,34 @@ No errors on the HTML validation tool
 ![CSS Validation](assets/images/css-validator.png)
 
 No errors on the CSS validation tool
+
+### Lighthouse Test
+![Lighthouse Test](assets/images/lighthouse-test.png)
+
+# Testing Errors and Improvements
+Overlapping of elements on mobile screens was improved by shrinking the grid container and reducing the size of some elements to fit smaller screens
+
+# Technologies Used
+### HTML5
+Used for structuring the content of the web pages.
+
+### CSS3
+Used for styling the website
+
+### Javascript
+Used for the interactivity of the game elements. 
+
+### Git & GitHub
+GitHub Pages was used to deploy the website live at: https://iyeme-dev.github.io/memory-card-game/
+
+# Credits and Reference
+- Images sourced from [FreePik](https://freepik.com/) 
+- Fonts from [Google Fonts](https://fonts.google.com/)
+
+# Author
+Iyeme Salubi
+
+
 
 
 
