@@ -414,8 +414,8 @@ p {
 }
 }
 
-/* Extra small devices: 320x480px */
-@media (max-width: 320px) and (max-height: 480px) {
+/* Extra small devices: 375x667px */
+@media (max-width: 375px) and (max-height: 667px) {
   body {
     height: 100vh;          /* lock body to viewport height */
     overflow-y: hidden;     /* avoid vertical scrolling */
@@ -423,7 +423,7 @@ p {
   }
 
   .grid-container {
-    transform: scale(0.6);       /* shrink grid down */
+    transform: scale(0.7);       /* shrink grid down */
     transform-origin: top center; /* anchor from top center */
     margin: 0 auto;               /* center horizontally */
   }
