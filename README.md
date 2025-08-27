@@ -228,6 +228,37 @@ Bold and clear fonts that ensure readability while matching the playful, energet
 
 - When time runs out: a “Game Over!” popup appears with a "Restart" button.
 
+### Wireframe
+
+#### Wireframe for Mobile, Tablet, and Desktop screen sizes respectively
+
+![Wireframe](assets/images/wireframe.png)
+
+# Deployment
+The project was deployed using GitHub and Visual Studio Code (VS Code).
+
+### My Repository
+1. I created a new public local repository on my GitHub account and linked the repository to VS Code to start building the website.
+
+2. All inputs and changes were committed to the local repository at regular intervals. Each commit was accompanied by a clear description.
+The commands used to add changes, commit, and push them are as follows:
+
+   - git add .  (add changes or edits made)
+   - git commit -m "Description of input or changes made"  (description of the edits made)
+   - git push  (push the changes to github)
+
+### Deployment on Github
+
+
+### Hosting
+1. To host my website on Github, I selected the repository - home-staging
+2. From Settings, I clicked on Pages and followed the steps below:
+   - Source: 'Deploy from a branch' on the dropdown menu
+   - Branch: 'Main' and 'root' from the dropdown menus
+   - Then save
+
+3. After a few minutes, the deployed link was present on the right-hand side of the repository dashboard page.
+
 # BrowserStack Responsiveness Test Report 
 Test Type: **Responsive UI**  
 Test Tool: **BrowserStack Live**  
@@ -312,6 +343,7 @@ No errors on the HTML validation tool
 ![CSS Validation](assets/images/css-validator.png)
 
 No errors on the CSS validation tool
+
 
 
 
