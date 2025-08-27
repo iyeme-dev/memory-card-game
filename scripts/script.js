@@ -1,6 +1,7 @@
-// DOM references
-const gridContainer = document.querySelector(".grid-container"); // container for all card elements
-const timerDisplay = document.querySelector(".timer");           // display element for countdown timer
+// container for all card elements
+const gridContainer = document.querySelector(".grid-container");
+// display element for countdown timer
+const timerDisplay = document.querySelector(".timer");        
 
 //Game state variables
 let cards = [];                // holds all card objects (duplicated & shuffled)
@@ -29,11 +30,9 @@ function startTimer() {
   timeLeft = 60;
   timerDisplay.textContent = `Time: ${timeLeft}s`;
 
-
   timerInterval = setInterval(() => {
     timeLeft--;
     timerDisplay.textContent = `Time: ${timeLeft}s`;
-
 
     if (timeLeft <= 0) {
       clearInterval(timerInterval);
