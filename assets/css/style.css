@@ -275,8 +275,10 @@ p {
 }
 
 .frem .gif {
-  max-width: 320px;   /* desktop/tablet default size */
-  width: 100%;        /* responsive scaling */
+  max-width: 320px;
+  /* desktop/tablet default size */
+  width: 100%;
+  /* responsive scaling */
   height: auto;
   margin-bottom: 1rem;
 }
@@ -358,29 +360,23 @@ p {
 @media (max-width: 430px) {
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* 3 per row */
-    grid-template-rows: repeat(4, 1fr);
-    /* 4 equal rows */
-    gap: 4px;
-    /* reduced even spacing */
-    width: 95vw;
-    /* shrink container slightly */
-    height: 70vh;
-    /* shrink grid height */
-    margin: auto;
-    /* center the grid */
+    grid-template-columns: repeat(3, 1fr); /* 3 per row */
+    grid-template-rows: repeat(4, 1fr); /* 4 equal rows */
+    gap: 4px; /* reduced even spacing */
+    width: 95vw; /* shrink container slightly */
+    height: 70vh; /* shrink grid height */
+    margin: auto; /* center the grid */
     box-sizing: border-box;
-
     justify-items: center;
     align-items: center;
+    transform: scale(0.8); /* Shrinks to 80% of original size */
+    transform-origin: top center; /* Keeps layout centered, anchored at the top */
   }
 
   .card {
     width: 65%;
     height: 65%;
     aspect-ratio: 2 / 3;
-    /* keep proportions */
     border-radius: 8px;
     place-self: center;
   }
@@ -405,9 +401,8 @@ p {
     font-size: 15px;
     padding: 5px 8px;
   }
-}
 
-.instruction-tab {
+  .instruction-tab {
   width: 30%;
   padding: 5px;
   font-size: 17px;
@@ -417,13 +412,15 @@ p {
 .instruction-content {
   width: 70%;
 }
+}
 
-/* Shrink the grid container on smaller screens */
-  .grid-container {
-    transform: scale(0.8);        /* Shrinks to 80% of original size */
-    transform-origin: top center; /* Keeps layout centered, anchored at the top */
-  }
+/* .instruction-tab {
+  width: 30%;
+  padding: 5px;
+  font-size: 17px;
+  font-weight: lighter;
+}
 
-  
-
-  
+.instruction-content {
+  width: 70%;
+} */
