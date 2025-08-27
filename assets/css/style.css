@@ -417,3 +417,13 @@ p {
 .instruction-content {
   width: 70%;
 }
+
+/* Shrink the grid container on smaller screens */
+  .grid-container {
+    transform: scale(0.8);        /* Shrinks to 80% of original size */
+    transform-origin: top center; /* Keeps layout centered, anchored at the top */
+  }
+
+  
+
+  
