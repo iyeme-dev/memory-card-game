@@ -401,7 +401,7 @@ Overlapping of elements on mobile screens on all browsers was improved by adding
 
 **2. Expected ';' and instead saw ','**
 - Reason: JSLint prefers explicit semicolons between declarations instead of trailing commas in multi-line variable declarations.
-- Resolution: Added semicolons for compliance.
+- Impact: Code still runs correctly in modern JavaScript engines. This is a style warning, not a functional error.
 
 ## Functionality
 **1. Error:** While two cards are being checked (checkForMatch), another click event triggered the opening of a 3rd card.
@@ -429,6 +429,7 @@ GitHub Pages was used to deploy the website live at: https://iyeme-dev.github.io
 
 # Author
 Iyeme Salubi
+
 
 
 
