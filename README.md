@@ -153,16 +153,16 @@ Fixed card set: The game uses a predefined set of images with no option for cust
 
 To increase engagement, usability, and educational value, the following improvements and extensions should be planned for future versions of the Memory Card Game:
 
-### Multiple Difficulty Levels
+#### Multiple Difficulty Levels
 Introduce easy, medium, and hard modes with varying numbers of cards or time limits to challenge players of all skill levels.
 
-### Customizable Card Sets
+#### Customizable Card Sets
 Allow users to upload or select custom images, themes, or categories, making the game more personal and engaging.
 
-### Score Tracking and Leaderboards
+#### Score Tracking and Leaderboards
 Implement user accounts or local storage to track high scores and fastest completion times, keeping players engaged.
 
-### Multiplayer Functionality
+#### Multiplayer Functionality
 Add multiplayer modes so players can compete or collaborate with friends and family.
 
 ## Summary
@@ -222,13 +222,19 @@ Bold and clear fonts that ensure readability while matching the playful, energet
 
 ![You Win Popup](assets/images/you-win.png)
 
-- If all pairs are matched in time: a “You Win!” popup with a "Play Again" button appears.
+- If all pairs are matched in time: a “You Win!” popup with a "Play Again" button appears. The popup improves usability - gives clear feedback and next step. This keeps the player engaged and motivated.
 
 8. 'Game Over' Popup
 
 ![Game Over Popup](assets/images/game-over.png)
 
-- When time runs out: a “Game Over!” popup appears with a "Restart" button.
+- When time runs out: a “Game Over!” popup appears with a "Restart" button. This gives immediate feedback to the user. Losing with a “Game Over” message sets a challenge — players feel encouraged to restart and do better.
+
+## Responsive Design
+
+![Responsive design](assets/images/responsive-screens.png)
+
+- Fully responsive across all devices—from smartphones to large desktop screens. Utilized CSS media queries
 
 ## Wireframe
 
@@ -236,29 +242,30 @@ Bold and clear fonts that ensure readability while matching the playful, energet
 
 ![Wireframe](assets/images/wireframe.png)
 
-# Deployment
-The project was deployed using GitHub and Visual Studio Code (VS Code).
+# Deployment  
+The project was deployed using **GitHub** and **Visual Studio Code (VS Code)**.  
+![Deployment](assets/images/deployment.png)
 
-## My Repository
-1. I created a new public local repository on my GitHub account and linked the repository to VS Code to start building the website.
-
-2. All inputs and changes were committed to the local repository at regular intervals. Each commit was accompanied by a clear description.
-The commands used to add changes, commit, and push them are as follows:
-
-   - git add .  (add changes or edits made)
-   - git commit -m "Description of input or changes made"  (description of the edits made)
-   - git push  (push the changes to github)
-
-## Hosting
-1. To host my website on Github, I selected the repository - home-staging
-2. From Settings, I clicked on Pages and followed the steps below:
-   - Source: 'Deploy from a branch' on the dropdown menu
-   - Branch: 'Main' and 'root' from the dropdown menus
-   - Then save
-
-3. After a few minutes, the deployed link was present on the right-hand side of the repository dashboard page.
+## Repository Setup  
+1. A new **public repository** was created on GitHub and linked to VS Code for development.  
+2. All changes were tracked and committed regularly, each with a clear and descriptive message.  
+3. The following Git commands were used throughout the process:  
+   - `git add .` → Stage all changes made  
+   - `git commit -m "Description of changes"` → Commit with a descriptive message  
+   - `git push` → Push the committed changes to GitHub  
+---
+## Hosting on GitHub Pages  
+1. In the project’s GitHub repository, navigate to **Settings > Pages**.  
+2. Under **Source**, select **Deploy from a branch**.  
+3. From the dropdown menus, choose:  
+   - **Branch:** `main`  
+   - **Folder:** `/ (root)`  
+4. Click **Save**.  
+5. After a few moments, the live deployment link appeared on the right-hand side of the repository dashboard.  
 
 # BrowserStack Responsiveness Test Report 
+To ensure a seamless user experience across different devices and browsers, responsiveness testing was carried out. The goal was to verify that the website adapts correctly to various screen sizes, resolutions, and operating systems. Using **BrowserStack Live**, the project was tested on mobile phones, tablets, and desktops to confirm proper grid alignment, scalable text, clickable buttons, and functional popups. This guarantees that users can interact with the website smoothly, regardless of the device or platform they use.  
+
 Test Type: **Responsive UI**  
 Test Tool: **BrowserStack Live**  
 
@@ -301,8 +308,8 @@ Test Tool: **BrowserStack Live**
 
 ---
 
-# Test Cases
-
+# Functionality Testing
+Functionality testing was carried out to validate the core logic and gameplay mechanics of the Memory Card Game. The purpose of this testing was to ensure that each interactive feature, such as card flipping, matching logic, timer countdown, win/lose conditions, and restart functionality, works as expected without errors. Test scenarios were designed to cover both normal gameplay and edge cases, ensuring a smooth and consistent user experience.
 Below is a list of test cases used to validate the functionality of the Memory Card Game.
 
 ---
@@ -331,7 +338,28 @@ All critical **gameplay, win/lose conditions, and restart functionality** passed
 
 ### Code Validation
 
+### JSLint  
+JSLint is a static code analysis tool for JavaScript. It scans the code for potential errors, coding style issues, and best practice violations. The tool helps ensure cleaner, more maintainable JavaScript.  
+No errors were found while testing the JavaScript code on JSlint.
+Some warnings however, were present. While most of the warnings were addressed, the following warnings remain but do not affect the functionality or performance of the script.
+
+## Reported Warnings
+
+### 1. Unexpected `let`
+Reason: JSLint does not fully support ES6+ syntax such as let, const, or for...of.
+Impact: No effect on functionality or performance in modern browsers (all current browsers support let).
+
+### 2. Use function (...) instead of complex arrow functions 
+Reason: JSLint recommends traditional function syntax when an arrow function body becomes more complex.
+Impact: No effect on script execution or performance. This is a readability/style suggestion only.
+
+Summary
+The reported warnings are caused by JSLint’s limited ES6 support and its strict style guidelines.
+They do not affect the correctness, usability, or performance of the memory game in modern environments.
+
 #### HTML Validation
+HTML validation checks the structure and syntax of HTML code against W3C standards. It ensures that the markup is error-free, accessible, and properly interpretable by web browsers. This helps improve compatibility and maintain a consistent structure across different platforms.  
+
 ![HTML Validation](assets/images/html-validator.png)
 
 No errors on the HTML validation tool
@@ -339,15 +367,21 @@ No errors on the HTML validation tool
 ---
 
 #### CSS Validation
+CSS validation verifies that stylesheets follow the official CSS specifications. It checks for syntax errors, unsupported properties, and potential browser compatibility issues. Validating CSS ensures consistent styling across devices and improves maintainability.
+
 ![CSS Validation](assets/images/css-validator.png)
 
 No errors on the CSS validation tool
 
 ### Lighthouse Test
+The Lighthouse audit was conducted on the Memory Card Game website to evaluate its overall quality in terms of performance, accessibility, best practices, SEO, and progressive web app (PWA) readiness. The results highlight the site’s strengths in responsiveness and usability, while also providing recommendations for optimization such as reducing unused JavaScript, and enhancing SEO with proper meta descriptions, which were implemented to improve the site's loading time and accessibility.
+
+Overall, the Lighthouse test helps ensure the game delivers a fast, accessible, and user-friendly experience across devices, while also guiding future improvements for better performance and discoverability.  
+
 ![Lighthouse Test](assets/images/lighthouse-test.png)
 
 # Testing Errors and Improvements
-Overlapping of elements on mobile screens was improved by shrinking the grid container and reducing the size of some elements to fit smaller screens
+Overlapping of elements on mobile screens was improved by shrinking the grid container and reducing the size of some elements to fit smaller screens.
 
 # Technologies Used
 ### HTML5
@@ -368,6 +402,7 @@ GitHub Pages was used to deploy the website live at: https://iyeme-dev.github.io
 
 # Author
 Iyeme Salubi
+
 
 
 
