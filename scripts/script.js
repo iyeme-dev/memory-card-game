@@ -1,11 +1,11 @@
 // container for all card elements
 const gridContainer = document.querySelector(".grid-container");
 // display element for countdown timer
-const timerDisplay = document.querySelector(".timer");        
+const timerDisplay = document.querySelector(".timer");
 
 //Game state variables
 let cards = [];                // holds all card objects (duplicated & shuffled)
-let firstCard, secondCard;     // tracks selected cards for matching
+let firstCard; secondCard;     // tracks selected cards for matching
 let lockBoard = false;         // prevents flipping during animations
 let timeLeft = 60;             // initial countdown time in seconds
 let timerInterval;             // reference to setInterval for timer
@@ -45,8 +45,8 @@ function startTimer() {
  * Shuffles the cards array in place using Fisher–Yates algorithm.
  */
 function shuffleCards() {
-  let currentIndex = cards.length,
-    randomIndex,
+  let currentIndex = cards.length;
+    randomIndex;
     temporaryValue;
   while (currentIndex !== 0) {
     randomIndex = Math.floor(Math.random() * currentIndex);
