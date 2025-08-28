@@ -34,8 +34,8 @@ This project creates an interactive game designed to challenge and improve users
    - [Lighthouse Test](#lighthouse-test)
 7. [Testing Errors and Improvements](testing-errors-and-improvements)
 8. [Technologies Used](#technologies-used)
-9. [Credit and Reference](credit-and-reference)
-10. [Author](author)
+9. [Credit and Reference](#credit-and-reference)
+10. [Author](#author)
 
 # About the Memory Card Game 
 The game features a clean, responsive design. Players are presented with a set of cards placed face down, and the objective is to match pairs by remembering the position of each card. The game includes features such as a countdown timer, restart button, instructional guidance, and feedback popups for both wins and losses, creating a responsive and rewarding user experience. 
@@ -405,6 +405,7 @@ GitHub Pages was used to deploy the website live at: https://iyeme-dev.github.io
 
 # Author
 Iyeme Salubi
+
 
 
 
