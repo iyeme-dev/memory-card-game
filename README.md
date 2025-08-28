@@ -340,8 +340,9 @@ All critical **gameplay, win/lose conditions, and restart functionality** passed
 ---
 
 ## Code Validation
-
-### JSLint  
+---
+### JSLint
+![JSLint](assets/images/jslint.png)
 JSLint is a static code analysis tool for JavaScript. It scans the code for potential errors, coding style issues, and best practice violations. The tool helps ensure cleaner, more maintainable JavaScript.  
 No errors were found while testing the JavaScript code on JSlint.
 Some warnings however, were present. While most of the warnings were addressed, the following warnings remain but do not affect the functionality or performance of the script.
@@ -356,9 +357,11 @@ Impact: No effect on functionality or performance in modern browsers (all curren
 Reason: JSLint recommends traditional function syntax when an arrow function body becomes more complex.
 Impact: No effect on script execution or performance. This is a readability/style suggestion only.
 
-##### Summary
+#### Summary
 The reported warnings are caused by JSLint’s limited ES6 support and its strict style guidelines.
 They do not affect the correctness, usability, or performance of the memory game in modern environments.
+
+---
 
 ### HTML Validation
 HTML validation checks the structure and syntax of HTML code against W3C standards. It ensures that the markup is error-free, accessible, and properly interpretable by web browsers. This helps improve compatibility and maintain a consistent structure across different platforms.  
@@ -376,6 +379,8 @@ CSS validation verifies that stylesheets follow the official CSS specifications.
 
 No errors on the CSS validation tool
 
+---
+
 ## Lighthouse Test
 The Lighthouse audit was conducted on the Memory Card Game website to evaluate its overall quality in terms of performance, accessibility, best practices, SEO, and progressive web app (PWA) readiness. The results highlight the site’s strengths in responsiveness and usability, while also providing recommendations for optimization such as reducing unused JavaScript, and enhancing SEO with proper meta descriptions, which were implemented to improve the site's loading time and accessibility.
 
@@ -386,7 +391,7 @@ Overall, the Lighthouse test helps ensure the game delivers a fast, accessible, 
 # Testing Errors, Warnings and Improvements
 
 ## Responsiveness 
-Overlapping of elements on mobile screens on all browsers was improved by shrinking the grid container and reducing the size of some elements to fit smaller screens.
+Overlapping of elements on mobile screens on all browsers was improved by adding a media query to shrink the grid container and reduce the size of some elements to fit smaller screens.
 
 ## JSLint
 
@@ -399,8 +404,11 @@ Overlapping of elements on mobile screens on all browsers was improved by shrink
 - Resolution: Added semicolons for compliance.
 
 ## Functionality
-- **Error:** While two cards are being checked (checkForMatch), another click event triggered the opening of a 3rd card.
-- **Resolution:** The flipCard function, together with the lockBoard flag was implemented, which prevents new flips while the board is locked.
+**1. Error:** While two cards are being checked (checkForMatch), another click event triggered the opening of a 3rd card.
+**Resolution:** The flipCard function, together with the lockBoard flag was implemented, which prevents new flips while the board is locked.
+
+**2. Error:** Game-over pop not displaying when the timer is up and cards remain unmatched.
+**Resolution:** Call the gameover function when the startTimer function is run, the countdown reaches zero and the game hasn’t been won (not all cards matched).
 
 # Technologies Used
 ### HTML5
@@ -421,6 +429,8 @@ GitHub Pages was used to deploy the website live at: https://iyeme-dev.github.io
 
 # Author
 Iyeme Salubi
+
+
 
 
 
