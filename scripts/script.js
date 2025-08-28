@@ -4,20 +4,20 @@ const gridContainer = document.querySelector(".grid-container");
 const timerDisplay = document.querySelector(".timer");
 
 //Game state variables
-let cards = [];                // holds all card objects (duplicated & shuffled)
-let firstCard; secondCard;     // tracks selected cards for matching
-let lockBoard = false;         // prevents flipping during animations
-let timeLeft = 60;             // initial countdown time in seconds
-let timerInterval;             // reference to setInterval for timer
-let timerStarted = false;      //prevents multiple timers
+let cards = []; // holds all card objects (duplicated & shuffled)
+let firstCard, secondCard; // tracks selected cards for matching
+let lockBoard = false; // prevents flipping during animations
+let timeLeft = 60; // initial countdown time in seconds
+let timerInterval; // reference to setInterval for timer
+let timerStarted = false; //prevents multiple timers
 
 // Fetch card data from JSON file and initialize the game
 fetch("./data/cards.json")
   .then((res) => res.json())
   .then((data) => {
-    cards = [...data, ...data];   // duplicate cards (pairs)
-    shuffleCards();               // randomize order
-    generateCards();              // render cards on grid
+    cards = [...data, ...data]; // duplicate cards (pairs)
+    shuffleCards(); // randomize order
+    generateCards(); // render cards on grid
   });
 
 /**
@@ -46,8 +46,7 @@ function startTimer() {
  */
 function shuffleCards() {
   let currentIndex = cards.length;
-    randomIndex;
-    temporaryValue;
+  let randomIndex, temporaryValue;
   while (currentIndex !== 0) {
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex -= 1;
@@ -84,8 +83,8 @@ function generateCards() {
  * Starts timer on the very first flip.
  */
 function flipCard() {
-  if (lockBoard) return;              // prevent clicks while board is locked
-  if (this === firstCard) return;     // prevent double-clicking the same card
+  if (lockBoard) return; // prevent clicks while board is locked
+  if (this === firstCard) return; // prevent double-clicking the same card
 
   // Start timer only on the very first flip
   if (!timerStarted) {
@@ -124,7 +123,7 @@ function disableCards() {
 
   resetBoard();
 
-// Check if all cards have been matched (win condition)
+  // Check if all cards have been matched (win condition)
   if (document.querySelectorAll(".flipped").length === cards.length) {
     setTimeout(() => {
       youWin();
@@ -198,7 +197,7 @@ function restart() {
 }
 
 // Attach restart logic to all restart buttons
-document.querySelectorAll(".restart-btn").forEach(btn => {
+document.querySelectorAll(".restart-btn").forEach((btn) => {
   btn.addEventListener("click", restart);
 });
 
