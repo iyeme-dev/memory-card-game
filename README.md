@@ -22,12 +22,14 @@ This project creates an interactive game designed to challenge and improve users
    - [Future Improvements](#future-improvements)  
    - [Summary](#summary)  
 4. [Design](#design)
-   - [Brand Colours](#brand-colours)  
+   - [Brand Colours](#brand-colours)
+   - [Typography](#typography)  
    - [Layout & Structure](#layout-and-structure)  
    - [Wireframe](#wireframe)  
 5. [Deployment](#deployment)
 6. [Testing](#testing)
-   - [Browser Testing](#browser-testing)  
+   - [Browser Testing](#browser-testing)
+   - [Functionality Testing](#functionality-testing)  
    - [Code Validation](#code-validation)  
    - [Lighthouse Test](#lighthouse-test)
 7. [Testing Errors and Improvements](testing-errors-and-improvements)
@@ -180,7 +182,7 @@ The website features an interactive memory card game designed with a clean and m
 
 - Vibrant and playful tones that reflect the fun, energetic nature of the game. The bold contrast creates excitement, keeps players engaged, and enhances the overall interactive experience.
 
-### Typography
+## Typography
 ![Typography](assets/images/typography.png)
 
 Bold and clear fonts that ensure readability while matching the playful, energetic theme of the game, keeping the interface engaging without distracting players.
@@ -230,7 +232,7 @@ Bold and clear fonts that ensure readability while matching the playful, energet
 
 - When time runs out: a “Game Over!” popup appears with a "Restart" button. This gives immediate feedback to the user. Losing with a “Game Over” message sets a challenge — players feel encouraged to restart and do better.
 
-## Responsive Design
+### Responsive Design
 
 ![Responsive design](assets/images/responsive-screens.png)
 
@@ -246,7 +248,7 @@ Bold and clear fonts that ensure readability while matching the playful, energet
 The project was deployed using **GitHub** and **Visual Studio Code (VS Code)**.  
 ![Deployment](assets/images/deployment.png)
 
-## Repository Setup  
+### Repository Setup  
 1. A new **public repository** was created on GitHub and linked to VS Code for development.  
 2. All changes were tracked and committed regularly, each with a clear and descriptive message.  
 3. The following Git commands were used throughout the process:  
@@ -254,7 +256,7 @@ The project was deployed using **GitHub** and **Visual Studio Code (VS Code)**.
    - `git commit -m "Description of changes"` → Commit with a descriptive message  
    - `git push` → Push the committed changes to GitHub  
 ---
-## Hosting on GitHub Pages  
+### Hosting on GitHub Pages  
 1. In the project’s GitHub repository, navigate to **Settings > Pages**.  
 2. Under **Source**, select **Deploy from a branch**.  
 3. From the dropdown menus, choose:  
@@ -263,7 +265,8 @@ The project was deployed using **GitHub** and **Visual Studio Code (VS Code)**.
 4. Click **Save**.  
 5. After a few moments, the live deployment link appeared on the right-hand side of the repository dashboard.  
 
-# BrowserStack Responsiveness Test Report 
+# Testing
+## Browser Testing
 To ensure a seamless user experience across different devices and browsers, responsiveness testing was carried out. The goal was to verify that the website adapts correctly to various screen sizes, resolutions, and operating systems. Using **BrowserStack Live**, the project was tested on mobile phones, tablets, and desktops to confirm proper grid alignment, scalable text, clickable buttons, and functional popups. This guarantees that users can interact with the website smoothly, regardless of the device or platform they use.  
 
 Test Type: **Responsive UI**  
@@ -271,7 +274,7 @@ Test Tool: **BrowserStack Live**
 
 ---
 
-## Device Responsiveness Test
+### Device Responsiveness Test
 
 | Test ID | Device | OS / Version | Screen Resolution | Test Scenario | Expected Result | Actual Result | Status |
 |---------|--------|--------------|-----------------|---------------|-----------------|---------------|--------|
@@ -283,7 +286,7 @@ Test Tool: **BrowserStack Live**
 
 ---
 
-## Browser Responsiveness Test
+### Browser Responsiveness Test
 
 | Test ID | Browser | Version | OS / Device | Test Scenario | Expected Result | Actual Result | Status |
 |---------|---------|---------|-------------|---------------|-----------------|---------------|--------|
@@ -299,7 +302,7 @@ Test Tool: **BrowserStack Live**
 
 ---
 
-## Responsive Test Summary
+### Responsive Test Summary
 - **Devices**: Works responsively across iOS, Android, tablets, and desktops.  
   - **3 cards/row** on mobile/tablet  
   - **6 cards/row** on desktop
@@ -308,13 +311,13 @@ Test Tool: **BrowserStack Live**
 
 ---
 
-# Functionality Testing
+## Functionality Testing
 Functionality testing was carried out to validate the core logic and gameplay mechanics of the Memory Card Game. The purpose of this testing was to ensure that each interactive feature, such as card flipping, matching logic, timer countdown, win/lose conditions, and restart functionality, works as expected without errors. Test scenarios were designed to cover both normal gameplay and edge cases, ensuring a smooth and consistent user experience.
 Below is a list of test cases used to validate the functionality of the Memory Card Game.
 
 ---
 
-## Test Case Table
+### Test Case Table
 
 | Scenario ID | Scenario Description       | Test Case ID | Test Case Description        | Precondition                     | Test Steps                  | Expected Result                                       | Actual Result                                        | Status   |
 |-------------|----------------------------|--------------|------------------------------|----------------------------------|-----------------------------|-------------------------------------------------------|------------------------------------------------------|----------|
@@ -336,24 +339,24 @@ All critical **gameplay, win/lose conditions, and restart functionality** passed
 
 ---
 
-### Code Validation
+## Code Validation
 
-#### JSLint  
+### JSLint  
 JSLint is a static code analysis tool for JavaScript. It scans the code for potential errors, coding style issues, and best practice violations. The tool helps ensure cleaner, more maintainable JavaScript.  
 No errors were found while testing the JavaScript code on JSlint.
 Some warnings however, were present. While most of the warnings were addressed, the following warnings remain but do not affect the functionality or performance of the script.
 
-##### Reported Warnings
+#### Reported Warnings
 
-###### 1. Unexpected `let`
+1. Unexpected `let`
 Reason: JSLint does not fully support ES6+ syntax such as let, const, or for...of.
 Impact: No effect on functionality or performance in modern browsers (all current browsers support let).
 
-###### 2. Use function (...) instead of complex arrow functions 
+2. Use function (...) instead of complex arrow functions 
 Reason: JSLint recommends traditional function syntax when an arrow function body becomes more complex.
 Impact: No effect on script execution or performance. This is a readability/style suggestion only.
 
-###### Summary
+##### Summary
 The reported warnings are caused by JSLint’s limited ES6 support and its strict style guidelines.
 They do not affect the correctness, usability, or performance of the memory game in modern environments.
 
@@ -373,7 +376,7 @@ CSS validation verifies that stylesheets follow the official CSS specifications.
 
 No errors on the CSS validation tool
 
-### Lighthouse Test
+## Lighthouse Test
 The Lighthouse audit was conducted on the Memory Card Game website to evaluate its overall quality in terms of performance, accessibility, best practices, SEO, and progressive web app (PWA) readiness. The results highlight the site’s strengths in responsiveness and usability, while also providing recommendations for optimization such as reducing unused JavaScript, and enhancing SEO with proper meta descriptions, which were implemented to improve the site's loading time and accessibility.
 
 Overall, the Lighthouse test helps ensure the game delivers a fast, accessible, and user-friendly experience across devices, while also guiding future improvements for better performance and discoverability.  
@@ -402,6 +405,7 @@ GitHub Pages was used to deploy the website live at: https://iyeme-dev.github.io
 
 # Author
 Iyeme Salubi
+
 
 
 
