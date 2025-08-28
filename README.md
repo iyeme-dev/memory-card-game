@@ -1,4 +1,4 @@
-﻿# Memory Game Website
+﻿# Memory Card Game Website
  
 Project by: Iyeme Salubi 
 
@@ -8,8 +8,9 @@ This project creates an interactive game designed to challenge and improve users
 
 # Table of Contents
 
-1. [Project Overview](#project-overview)
-2. [User Stories](#user-stories)
+1. [About the Memory Card Game](#about-the-memory-card-game)
+2. [User Experience UX](#user-experience-ux)
+   - [User Stories](#user-stories) 
 3. [Rationale](#rationale)
    - [Target Audience](#target-audience)  
    - [Motivation](#motivation)  
@@ -33,35 +34,23 @@ This project creates an interactive game designed to challenge and improve users
 9. [Credit and Reference](credit-and-reference)
 10. [Author](author)
 
-# Project Overview
-The game features a clean, responsive design. Players are presented with a set of cards placed face down, and the objective is to match pairs by remembering the position of each card. The game includes features such as a countdown timer, restart button, instructional guidance, and feedback popups for both wins and losses, creating a responsive and rewarding user experience. The project emphasizes simplicity, interactivity, and responsiveness, ensuring it functions smoothly across desktop and mobile devices.
+# About the Memory Card Game 
+The game features a clean, responsive design. Players are presented with a set of cards placed face down, and the objective is to match pairs by remembering the position of each card. The game includes features such as a countdown timer, restart button, instructional guidance, and feedback popups for both wins and losses, creating a responsive and rewarding user experience. 
 
-# User Stories
-The game has been designed with a primary focus on the following set of users - Game Lovers who enjoy challenges that test memory and concentration, Teachers & Parents seeking an engaging, simple game for children that can help improve memory while keeping them entertained, Students who want to practice focus and short-term memory skills and Busy Professionals  looking for a short, stress-relieving break during work hours. The user stories include:
+# User Experience UX
+The game has been designed with a primary focus on the following set of users - Game Lovers who enjoy challenges that test memory and concentration, Teachers & Parents seeking an engaging, simple game for children that can help improve memory while keeping them entertained, Students who want to practice focus and short-term memory skills and Busy Professionals looking for a short, stress-relieving break during work hours. 
 
-Quick and Easy to Start:
-As a Busy Professional, I want to quickly start a game without needing to sign up, so I can maximize my break time.
-
-Mobile Responsiveness: 
-As a game lover, I want the game to function properly on my phone, so I can play on the go.
-
-Restart Button:
-As a game lover, I want to quickly restart the game with a single click, so that I can replay immediately if I make a mistake or want a new challenge without having to refresh the whole page.
-
-Instruction Tab:
-As a game lover, I want to easily access clear instructions on how to play, so that I can understand the objectives, controls, and rules before starting the game.
-
-You Win Popup:
-As a game lover, I want to receive feedback when I successfully match all cards, so that I feel encouraged after completing the challenge and motivated to play again.
-
-Simple and Fun:
-As a teacher, I want a simple and fun game for children, so they stay engaged.
-
-Uncluttered Layout:
-As a game lover, I want the game interface to be clean and minimal, showing only essential elements— so that I can focus on the game without distractions or confusion.
+### User Stories
+- **Quick and Easy to Start:** As a busy professional, I want to quickly start a game without needing to sign up, so I can maximize my break time.
+- **Mobile Responsiveness:** As a game lover, I want the game to function properly on my phone, so I can play on the go.
+- **Restart Button:** As a game lover, I want to quickly restart the game with a single click, so that I can replay immediately if I make a mistake or want a new challenge without having to refresh the whole page.
+- **Instruction Tab:** As a game lover, I want to easily access clear instructions on how to play, so that I can understand the objectives, controls, and rules before starting the game.
+- **You Win Popup:** As a game lover, I want to receive feedback when I successfully match all cards, so that I feel encouraged after completing the challenge and motivated to play again.
+- **Simple and Fun:** As a teacher, I want a simple and fun game for children, so they stay engaged.
+- **Uncluttered Layout:** As a game lover, I want the game interface to be clean and minimal, showing only essential elements— so that I can focus on the game without distractions or confusion.
 
 # Rationale
-The Memory Card Game is a simple matching game that challenges players to flip and match pairs of cards within a 60-second time limit. With just a tap, users can start the game, flip cards, and attempt to find all matching pairs before time runs out. Clean and uncluttered, the game’s simple interface ensures both children and adults can enjoy a playful brain exercise without distractions. 
+The Memory Card Game is a simple matching game that challenges players to flip and match pairs of cards within a 60-second time limit. With just a tap, users can start the game, flip cards, and attempt to find all matching pairs before the time runs out. Clean and uncluttered, the game’s simple interface ensures both children and adults can enjoy a playful brain exercise without distractions. 
 
 ### Target Audience
 Puzzle & Brain Game Lovers – Users who enjoy challenges that test memory and concentration.
@@ -366,6 +355,7 @@ GitHub Pages was used to deploy the website live at: https://iyeme-dev.github.io
 
 # Author
 Iyeme Salubi
+
 
 
 
