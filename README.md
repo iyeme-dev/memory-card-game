@@ -383,8 +383,23 @@ Overall, the Lighthouse test helps ensure the game delivers a fast, accessible, 
 
 ![Lighthouse Test](assets/images/lighthouse-test.png)
 
-# Testing Errors and Improvements
-Overlapping of elements on mobile screens was improved by shrinking the grid container and reducing the size of some elements to fit smaller screens.
+# Testing Errors, Warnings and Improvements
+
+## Responsiveness 
+Overlapping of elements on mobile screens on all browsers was improved by shrinking the grid container and reducing the size of some elements to fit smaller screens.
+
+## JSLint
+1. Unexpected trailing space
+Reason: Extra whitespace at the end of the line.
+Resolution: Remove trailing spaces for cleaner code style.
+
+2. Expected ';' and instead saw ','
+Reason: JSLint prefers explicit semicolons between declarations instead of trailing commas in multi-line variable declarations.
+Resolution: Add semicolons for compliance.
+
+## Functionality
+Error: While two cards are being checked (checkForMatch), another click event triggered the opening of a 3rd card. 
+Resolution: The flipCard function, together with the lockBoard flag was implemented, which prevents new flips while the board is locked.
 
 # Technologies Used
 ### HTML5
@@ -405,6 +420,7 @@ GitHub Pages was used to deploy the website live at: https://iyeme-dev.github.io
 
 # Author
 Iyeme Salubi
+
 
 
 
