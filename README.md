@@ -338,26 +338,26 @@ All critical **gameplay, win/lose conditions, and restart functionality** passed
 
 ### Code Validation
 
-### JSLint  
+#### JSLint  
 JSLint is a static code analysis tool for JavaScript. It scans the code for potential errors, coding style issues, and best practice violations. The tool helps ensure cleaner, more maintainable JavaScript.  
 No errors were found while testing the JavaScript code on JSlint.
 Some warnings however, were present. While most of the warnings were addressed, the following warnings remain but do not affect the functionality or performance of the script.
 
-## Reported Warnings
+##### Reported Warnings
 
-### 1. Unexpected `let`
+###### 1. Unexpected `let`
 Reason: JSLint does not fully support ES6+ syntax such as let, const, or for...of.
 Impact: No effect on functionality or performance in modern browsers (all current browsers support let).
 
-### 2. Use function (...) instead of complex arrow functions 
+###### 2. Use function (...) instead of complex arrow functions 
 Reason: JSLint recommends traditional function syntax when an arrow function body becomes more complex.
 Impact: No effect on script execution or performance. This is a readability/style suggestion only.
 
-Summary
+###### Summary
 The reported warnings are caused by JSLint’s limited ES6 support and its strict style guidelines.
 They do not affect the correctness, usability, or performance of the memory game in modern environments.
 
-#### HTML Validation
+### HTML Validation
 HTML validation checks the structure and syntax of HTML code against W3C standards. It ensures that the markup is error-free, accessible, and properly interpretable by web browsers. This helps improve compatibility and maintain a consistent structure across different platforms.  
 
 ![HTML Validation](assets/images/html-validator.png)
@@ -366,7 +366,7 @@ No errors on the HTML validation tool
 
 ---
 
-#### CSS Validation
+### CSS Validation
 CSS validation verifies that stylesheets follow the official CSS specifications. It checks for syntax errors, unsupported properties, and potential browser compatibility issues. Validating CSS ensures consistent styling across devices and improves maintainability.
 
 ![CSS Validation](assets/images/css-validator.png)
@@ -402,6 +402,7 @@ GitHub Pages was used to deploy the website live at: https://iyeme-dev.github.io
 
 # Author
 Iyeme Salubi
+
 
 
 
